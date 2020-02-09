@@ -1,6 +1,9 @@
 name: Python package
-
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+    - master
+    types: [edited, opened, reopened]
 
 jobs:
   build:
