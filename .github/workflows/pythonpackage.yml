@@ -26,6 +26,7 @@ jobs:
         echo ${{ github.SHA }}
         echo ${{ github.REPOSTITORY }} 
         echo ${{ github.GITHUB_TOKEN }}
+        echo ${{ github.GITHUB_REF }}
         
     - name: Install dependencies
       run: |
