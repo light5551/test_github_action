@@ -23,8 +23,9 @@ jobs:
         echo GIT
         ls -a .git/hooks
         echo ENV
-        echo ${{ github.SHA }}
         echo ${{ github.GITHUB_REF }}
+        echo ${{ github.SHA }}
+        
         
     - name: Install dependencies
       run: |
