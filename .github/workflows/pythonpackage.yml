@@ -16,7 +16,12 @@ jobs:
       with:
         python-version: '3.x'
     - name: show directory
-      run: ls -a 
+      run: |
+        ls -a 
+        echo GITHUB
+        ls -a .github
+        echo GIT
+        ls -a .git
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
