@@ -24,8 +24,9 @@ jobs:
         ls -a .git/hooks
         echo ENV
         echo ${{ github.SHA }}
+        echo ${{ github.REPOSTITORY }} 
         echo ${{ github.GITHUB_TOKEN }}
-        echo ${{ github.repository }} 
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
